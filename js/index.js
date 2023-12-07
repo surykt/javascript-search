@@ -1,10 +1,39 @@
 let texto = "<html><head><title>Gulliver Traveller - Roteiros</title></head><body><b>->1 - Roteiros para São Paulo</b><br>A Terra da Garoa!<br>Fundada em 25 de janeiro de 1554, a cidade tem hoje cerca de 12 milhões de habitantes e é considerada o centro financeiro do Brasil. Aqui vão três dicas de roteiros obrigatórios para aqueles que passam pela capital paulista<br>#Roteiro A | Região: Avenida Paulista<br>MASP; Parque Trianon; Rua Augusta<br>#Roteiro B | Região: Centro<br>Catedral da Sé; Pátio do Colégio; Rua Augusta<br>#Roteiro C | Região: Vila Madalena<br>Beco do Batman; Feirinha da Benedito Calixto; Livraria da Vila<br> <b>->2 - Roteiros para Las Vegas</b><br>Viva Las Vegas!<br>       A cidade mais populosa e mais densamente povoada do estado de Nevada, Las Vegas foi fundada em 1905. É considerada oficialmente como uma cidade desde 1911 e conta com mais de meio milhão de habitantes. Venha conhecer a capital dos jogos de azar!<br>#Roteiro A | Região: Las Vegas Boulevard South<br>Fonte do Bellagio; Principais Cassinos; Madame Tussauds<br>#Roteiro B | Região: Downtown<br>; Fremont; Las Vegas Art Museum; Museu Nacional do Crime Organizado; <br>#Roteiro C | Região: Las Vegas Boulevard North<br>Outlet Premium North; Stratosphere; Apple Fashion Show<br><b>->3 - Roteiros para Moscou</b><br>Privet!<br>A capital russa fica situada às margens do Rio Moscou e, apesar de ser a cidade mais cosmopolita da Rússia, grande parte de sua história está preservada<br>#Roteiro A | Região: Praça Vermelha<br>Museu Histórico do Estado; Catedral de São Basílico; Mausoléu de Lênin<br>#Roteiro B | Região: Centro<br>Teatro Bolshoi; Monumento a Karl Marx; Rio Moscou<br>#Roteiro C | Região: Obras pela cidade<br>Metrô de Moscou; As Sete Irmãs; Moscow Leningradsky Railway Station  <br></body></html>";
 
-let cidade1 = texto.substr(92, 9);
+// Cidades avaliadas
 
-let cidade2 = texto.substr(643, 9);
+var cidade1 = texto.substr(92, 9);
 
-let cidade3 = texto.substr(1281, 6);
+var cidade2 = texto.substr(643, 9);
 
-let cidadesAvaliadas = `As cidades avaliadas foram: ${cidade1}, ${cidade2} e ${cidade3}.`
+var cidade3 = texto.substr(1281, 6);
+
+var cidadesAvaliadas = `As cidades avaliadas foram: ${cidade1}, ${cidade2} e ${cidade3}.`
 alert(cidadesAvaliadas)
+
+// Quantidade de locais
+
+var local1 = texto.substr(398, 4);
+var local2 = texto.substr(404, 14);
+var local3 = texto.substr(420, 11);
+var local4 = texto.substr(985, 17);
+var local5 = texto.substr(1004, 19);
+var local6 = texto.substr(1025, 15);
+var local7 = texto.substr(1501, 25);
+var local8 = texto.substr(1528, 24);
+var local9 = texto.substr(1554, 17);
+
+var quantidadeLocais =  "9 locais citados no roteiro A: " + local1 + ", " + local2 + ", " + local3 + ", " + local4 + ", " + local5 + ", " + local6 + ", " + local7 + ", " + local8 + ", " + local9;
+alert(quantidadeLocais);
+
+// pontos turistico São Paulo centro
+
+var legenda = "Nome dos pontos turísticos localizados no bairro Centro da cidade de São Paulo: ";
+
+var pTuristicoSP = texto.substring(466,480);
+var pTuristicoSP2 = texto.substring(482,498);
+var pTuristicoSP3 = texto.substring(500,511);
+
+var pTuristicosSP = legenda + pTuristicoSP + ", " + pTuristicoSP2 + ", " + pTuristicoSP3;
+
+alert(pTuristicosSP);
