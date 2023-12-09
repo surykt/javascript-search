@@ -11,6 +11,30 @@ var cidade3 = texto.substr(1281, 6);
 var cidadesAvaliadas = `As cidades avaliadas foram: ${cidade1}, ${cidade2} e ${cidade3}.`
 alert(cidadesAvaliadas)
 
+//Roteiros A de São Paulo:
+
+var SpPrimeiro = texto.substring(398,402);
+
+var SpSegundo = texto.substring(404,418);
+
+var SpTerceiro = texto.substring(420,431);
+
+var LvPrimeiro = texto.substring(985,1002);
+
+var LvSegundo = texto.substring(1004,1023);
+
+var LvTerceiro = texto.substring(1025,1040);
+
+var MsPrimeiro = texto.substring(1501,1526);
+
+var MsSegundo = texto.substring(1528,1552);
+
+var MsTerceiro = texto.substring(1554, 1571);
+
+var RoteirosMs = `As localidades do Roteiro A para São Paulo são: ${SpPrimeiro}, ${SpSegundo} e ${SpTerceiro}. As de Las Vegas são: ${LvPrimeiro}, ${LvSegundo} e ${LvTerceiro}. E as localidades do Roteiro A para Moscou são: ${MsPrimeiro}, ${MsSegundo} e ${MsTerceiro}.`
+alert(RoteirosMs)
+
+
 // Quantidade de locais
 
 var local1 = texto.substr(398, 4);
@@ -37,3 +61,14 @@ var pTuristicoSP3 = texto.substring(500,511);
 var pTuristicosSP = legenda + pTuristicoSP + ", " + pTuristicoSP2 + ", " + pTuristicoSP3;
 
 alert(pTuristicosSP);
+
+// Bairro
+
+var legendaDowntown = 'O nome dos pontos turísticos localizados no bairro Downtown da cidade de Los Angeles são: '
+
+var  bairroDowntown = texto.substr(1079,65);
+
+var lista = bairroDowntown.split(";");
+var pTuristicosDowntown = `${legendaDowntown} ${lista}`
+
+alert(pTuristicosDowntown)
